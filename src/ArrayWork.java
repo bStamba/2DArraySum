@@ -10,6 +10,7 @@ public class ArrayWork {
         ourTwoDArray = twoDArray;
         total = 0;
         counter = 0;
+
         for(int i = 0; i < ourTwoDArray.length; i++){
             for(int j = 0; j < ourTwoDArray[i].length; j++){
                 total = total + ourTwoDArray[i][j];
@@ -25,6 +26,7 @@ public class ArrayWork {
         ourTwoDArray = twoDArray;
         total = 0;
         counter = 0;
+
         for(int i = 0; i < ourTwoDArray.length; i++){
             for(int j = 0; j < ourTwoDArray[i].length; j++) {
                 total = total - ourTwoDArray[i][j];
@@ -40,12 +42,17 @@ public class ArrayWork {
     public void multiplyTwoDArray(int[][] twoDArray){
         ourTwoDArray = twoDArray;
         long multiplyTotal = ourTwoDArray[0][0];
-        System.out.println("multiplyTotal value is: " + multiplyTotal);
         counter = 0;
+
         for(int i = 0; i < ourTwoDArray.length; i++){
             for(int j = 0; j < ourTwoDArray[i].length; j++){
-                multiplyTotal = (multiplyTotal * ourTwoDArray[i][j]);
-                counter++;
+                if(i == 0 && j == 0){
+                    counter++;
+                }
+                else{
+                    multiplyTotal = (multiplyTotal * ourTwoDArray[i][j]);
+                    counter++;
+                }
             }
         }
         System.out.println("Multiplying the " + counter + " elements of our array results in: " + multiplyTotal);
