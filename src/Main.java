@@ -4,7 +4,7 @@ public class Main {
 
         //Variables for our sum, counter if we want to count our elements, and the 2d array itself.
         int[][] numArray = {{1, 3, 5, 7},
-                            {2, 4, 6},
+                            {2, 4, 6, 12},
                             {12, 17, 19, 22, 24},
                             {24, 28, 30, 34, 37, 39},
                             {45, 47, 51, 72, 15}};
@@ -22,6 +22,7 @@ public class Main {
         System.out.println("-----------");
         work.sumTwoDArray(numArray);
         work.subtractTwoDArray(numArray);
+        work.multiplyTwoDArray(numArray);
         System.out.println("");
 
         //Check the sum, and the difference of our second array.
@@ -29,5 +30,6 @@ public class Main {
         System.out.println("------------");
         work.sumTwoDArray(numArrayTwo);
         work.subtractTwoDArray(numArrayTwo);
+        work.multiplyTwoDArray(numArrayTwo);
     }
 }
