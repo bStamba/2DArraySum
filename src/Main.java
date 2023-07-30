@@ -17,7 +17,7 @@ public class Main {
 
         ArrayWork work = new ArrayWork();
 
-        //Check the sum, and the difference of our first array.
+        //Check the sum, difference, and multiplication of our first array.
         System.out.println("First Array");
         System.out.println("-----------");
         work.sumTwoDArray(numArray);
@@ -25,7 +25,7 @@ public class Main {
         work.multiplyTwoDArray(numArray);
         System.out.println("");
 
-        //Check the sum, and the difference of our second array.
+        //Check the sum, difference, and multiplication of our second array.
         System.out.println("Second Array");
         System.out.println("------------");
         work.sumTwoDArray(numArrayTwo);
